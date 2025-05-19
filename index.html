@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "6mjrqArrnllvMX3mQ",
+        });
+    })();
+    </script>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="#" class="logo"><span>Sahil</span></a>
+        <ul class="links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class='bx bx-menu-alt-right' id="menu"></i>
+        <a href="#contact" class="btn">Contact Me</a>
+    </nav>
+
+    <section id="home" class="block">
+        <img src="images/image.jpeg" alt="">
+        <div class="info-box">
+            <h1><span>Hello, I'm Sahil</span></h1>
+            <h3><span>Web Developer</span></h3>
+            <p>I’m a web developer skilled in frontend and backend technologies, including Tailwind, Python, Flask, Django, SQL, and MongoDB. I create scalable, efficient, and user-friendly applications that blend functionality with intuitive design for seamless digital experiences.</p>
+        </div>
+        <div class="btn-box">
+            <div class="btn">Hire</div>
+            <div class="btn">Download CV</div>
+        </div>
+    </section>
+
+    <section id="about" class="block">
+        <div class="about-box"> 
+            <div class="about-info">
+                <h1><span>About Me</span></h1>
+                <p>I am a web developer with expertise in both frontend and backend development, specializing in HTML, CSS, Tailwind, JavaScript, Python, Flask, Django, SQL, and MongoDB. Passionate about building efficient, scalable, and user-friendly applications, I strive to create seamless digital experiences with robust functionality and intuitive design.</p>
+            </div>
+            <h2><span>Skills</span></h2>
+            <div class="skills">
+                <ul>
+                    <li><span><i class='bx bx-chevron-right'></i> HTML, CSS, JS </span></li>
+                    <li><span><i class='bx bx-chevron-right'></i> TAILWIND </span></li>
+                    <li><span><i class='bx bx-chevron-right'></i> JAVA </span></li>
+                </ul>
+                <ul>
+                    <li><span><i class='bx bx-chevron-right'></i> PYTHON </span></li>
+                    <li><span><i class='bx bx-chevron-right'></i> Python libraries </span></li>
+                    <li><span><i class='bx bx-chevron-right'></i> SQL, MongoDB </span></li>
+                </ul>
+            </div>
+        </div>
+        <img src="images/image.jpeg" alt="">
+    </section>
+
+    <section id="projects" class="block">
+        <h1 class="header"><span>Projects</span></h1>
+        <div class="projects-container">
+            <div class="box">
+                <h1><span>Encrypted Password Manager</span></h1>
+                <p>A secure and user-friendly password management tool built with Python and Flask. It encrypts credentials to ensure privacy and protection, offering a reliable way to safeguard sensitive information.</p>
+                <img src="images/project1.png" alt="Encrypted Password Manager Screenshot">
+            </div>
+
+            <div class="box">
+                <h1><span>College & Clubs</span></h1>
+                <p>A platform connecting students with college events, clubs, and activities. It fosters engagement, simplifies event management, and enhances campus interaction, making participation and community-building effortless.</p>
+                <img src="images/project2.jpg" alt="College & Clubs Screenshot">
+            </div>
+
+            <div class="box">
+                <h1><span>Amazon clone website</span></h1>
+                <p>An Amazon-inspired frontend project replicating the platform’s UI. It showcases product displays, navigation, and styling, focusing on design and user experience without backend functionality.</p>
+                <img src="images/project3.png" alt="Amazon Clone Screenshot">
+            </div>
+        </div>
+    </section> 
+    
+    <section id="contact" class="block">
+        <h1 class="header"><span>Contact</span></h1>
+        <form action="#">
+            <div class="input-box">
+                <span>Full Name</span>
+                <input type="text" id="name" placeholder="Enter Your Full Name">
+            </div>
+            <div class="input-box">
+                <span>Your Email</span>
+                <input type="text" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="input-box">
+                <span>Your Message</span>
+                <input type="text" id="message" placeholder="Enter Your Message">
+            </div>
+            <button class="btn btn-white" type="button" onclick="sendMail()">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="col-left">
+            <div class="col-box">
+                <span><i class='bx bxs-location-plus'></i></span>
+                <span>Mumbai, India</span>
+            </div>
+            <div class="col-box">
+                <span><i class='bx bxs-phone'></i></span>
+                <span>+91 9220988615</span>
+            </div>
+            <div class="col-box">
+                <span><i class='bx bxs-envelope' ></i></span>
+                <span>godambesahil@gmail.com</span>
+            </div>
+
+        </div>
+        <div class="col-right">
+            <span>About My Services</span>
+            <p>I specialize in backend development using Python, Flask, Django, SQL, and MongoDB. My services include backend integration, database management, API development, and performance optimization, ensuring seamless functionality for scalable and efficient applications.</p>
+            <div class="social-icons">
+                <span><i class='bx bxl-instagram-alt'></i></span>
+                <span><i class='bx bxl-linkedin-square'></i></span>
+                <span><i class='bx bxl-github'></i></span>
+                <span><i class='bx bxl-facebook-square'></i></span>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
